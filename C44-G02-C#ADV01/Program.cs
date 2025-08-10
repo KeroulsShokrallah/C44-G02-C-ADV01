@@ -21,7 +21,7 @@
 
             #region 2.create a generic Range<T> class that represents a range of values from a minimum value to a maximum value. The range should support basic operations such as checking if a value is within the range and determining the length of the range.
 
-            var intRange = new Range<int>(10 , 20);
+            var intRange = new Range<int>(20 , 10);
 
             Console.WriteLine($"Range : {intRange}");
 

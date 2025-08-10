@@ -20,7 +20,10 @@ namespace C44_G02_C_ADV01
         {
             if (min .CompareTo (max) > 0)
             {
-                throw new ArgumentException("min should less than max");
+                T temp = min;
+                min = max;
+                max = temp;
+                //throw new ArgumentException("min should less than max");
             }
             
             Min = min;
@@ -52,7 +55,6 @@ namespace C44_G02_C_ADV01
             dynamic maxvalue = Max;
 
             return maxvalue - minvalue;
-
 
 
         }

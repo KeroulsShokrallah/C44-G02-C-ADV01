@@ -14,7 +14,7 @@ namespace C44_G02_C_ADV01
             n1 = n2;
             n2 = temp;
         }
-        public static void OptimizedBubbleSort<T>(T[] array)  where T  : IComparable
+        public static void OptimizedBubbleSort<T>(T[] array)  where T  : IComparable<T>
         {
             for (int i = 0; i < array.Length; i++)
             {
